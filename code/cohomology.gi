@@ -379,7 +379,7 @@ AppendTo(exportFile,"')\n");
 
 AppendTo(exportFile,"run_time = time() \n");
 AppendTo(exportFile,"W2 = N",n-1,".image()\n");
-AppendTo(exportFile,"B = Q2.basis()\n");
+
 AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/logfile.txt\"),", "\"w\") as f:\n");
 AppendTo(exportFile,"    f.write('Computation of the image of N'+str(n-1)+' has been done! ')\n");
 AppendTo(exportFile,"    f.write('It took '+str(time()-run_time)+' seconds!'+'");
@@ -389,6 +389,7 @@ AppendTo(exportFile,"')\n");
 
 AppendTo(exportFile,"run_time = time() \n");
 AppendTo(exportFile,"Q2 = V2/W2\n");
+AppendTo(exportFile,"B = Q2.basis()\n");
 AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/logfile.txt\"),", "\"w\") as f:\n");
 AppendTo(exportFile,"    f.write('Computation of the quotient has been done! ')\n");
 AppendTo(exportFile,"    f.write('It took '+str(time()-run_time)+' seconds!'+'");
