@@ -14,6 +14,7 @@ with open(os.path.expanduser("./logs/logfile.txt"),"w") as f:
     f.write('It took '+String(time()-run_time)+' seconds!'+'\n')
 run_time = time() 
 load("./tmp/f0.sage")
+with open(os.path.expanduser("./logs/logfile.txt"),"w") as f:
     f.write('Finished loading the chain map f'+String(n)+'\n')
     f.write('It took '+String(time()-run_time)+' seconds!'+'\n')
 run_time = time() 
