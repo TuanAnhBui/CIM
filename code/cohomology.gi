@@ -185,7 +185,7 @@ PrintTo(exportFile,"\" Commands for computing cohomology of degree ",n,"\"\n");
 AppendTo(exportFile,"from time import time, gmtime, strftime \n"); 
 AppendTo(exportFile,"logfile = strftime(\"%d%b%Y%H%M\", gmtime()) \n");
 
-AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/log",String(n),".txt\"),", "\"a+\") as f:\n");
+AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/log",String(n),".txt\"),", "\"w+\") as f:\n");
 AppendTo(exportFile,"    f.write('LOGFILE FOR THE COMPUTATION OF D'+str(n)+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
@@ -256,7 +256,7 @@ AppendTo(exportFile,"    f.write('It took '+str(time()-run_time)+' seconds!'+'")
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
 
-AppendTo(exportFile,"with open(os.path.expanduser(\"./results/d",String(n),".g\"),", "\"a+\") as f:\n");
+AppendTo(exportFile,"with open(os.path.expanduser(\"./results/d",String(n),".g\"),", "\"w+\") as f:\n");
 AppendTo(exportFile,"    f.write('return '+str(LL)+';')\n");
 
 AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/log",String(n),".txt\"),", "\"a+\") as f:\n");
@@ -306,7 +306,7 @@ PrintTo(exportFile,"\" Commands for computing cohomology of degree ",n,"\"\n");
 AppendTo(exportFile,"from time import time, gmtime, strftime \n"); 
 AppendTo(exportFile,"logfile = strftime(\"%d%b%Y%H%M\", gmtime()) \n");
 
-AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/log",String(n),".txt\"),", "\"a+\") as f:\n");
+AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/log",String(n),".txt\"),", "\"w+\") as f:\n");
 AppendTo(exportFile,"    f.write('LOGFILE FOR THE COMPUTATION OF D'+str(n)+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
@@ -451,7 +451,7 @@ AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
 
 
-AppendTo(exportFile,"with open(os.path.expanduser(\"./results/d",String(n),".g\"),", "\"a+\") as f:");
+AppendTo(exportFile,"with open(os.path.expanduser(\"./results/d",String(n),".g\"),", "\"w+\") as f:");
 AppendTo(exportFile,"    f.write('return '+str(LL)+';') \n");
 
 AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/log",String(n),".txt\"),", "\"a+\") as f:\n");
