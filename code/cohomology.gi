@@ -303,7 +303,7 @@ AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/logfile.txt\"),", "\"
 AppendTo(exportFile,"    f.write('LOGFILE FOR THE COMPUTATION OF D'+str(n)");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
-
+AppendTo(exportFile,"n = ",n,"\n");
 AppendTo(exportFile,"total_run_time = time() \n");
 AppendTo(exportFile,"run_time = time() \n");
 AppendTo(exportFile,"load(\"./tmp/C",n-1,"_C",n,".sage\")\n");
