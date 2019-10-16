@@ -1,0 +1,1 @@
+Temporary files are created during the computation. These files are used when switching back and forth between GAP and SAGE!

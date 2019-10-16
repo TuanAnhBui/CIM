@@ -1,0 +1,1 @@
+Result files are in GAP format! 
