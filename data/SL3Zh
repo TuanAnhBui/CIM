@@ -1,0 +1,274 @@
+HAP_GCOMPLEX_SETUP:=[false];
+
+q1:=[[1,0,0],[0,0,-1],[0,1,1]];
+q2:=[[-1,0,0],[0,1,1],[0,0,-1]];
+m0 := [ [1,0,0], [0,1,0], [0,0,1] ];
+m1 := [ [0,0,1], [0,1,0], [-1,0,0] ];
+m2 := [ [-1,0,0], [0,0,-1], [0,-1,0] ];
+m3 := [ [1,0,0], [0,0,-1], [0,1,1] ];
+m4 := [ [-1,0,0], [0,1,1], [0,0,-1] ];
+m5 := [ [0,-1,0], [-1,0,0], [0,0,-1] ];
+m6 := [ [0,0,-1], [-1,0,0], [1,1,1] ];
+m7 := [ [-1,0,0], [0,1,0], [0,-1,-1] ];
+m8 := [ [0,-1,-1], [0,-1,0], [-1,1,0] ];
+m9 := [ [-1,0,0], [0,0,1], [0,1,0] ];
+m10 := [ [0,0,-1], [-1,0,-1], [0,1,1] ];
+m11 := [ [0,1,0], [0,0,1], [1,0,0] ];
+m12 := [ [0,0,-1], [0,-1,0], [-1,0,0] ];
+m13 := [ [-1,0,0], [0,-1,0], [1,1,1] ];
+m14 := [ [-1,0,0], [-1,0,-1], [1,-1,0] ];
+m15 := [ [0,1,1], [1,0,1], [0,0,-1] ];
+
+HAP_GCOMPLEX_LIST:=
+
+
+[ 
+
+#0-cells
+[ 
+#v1 = O 
+rec(
+          TheMatrixStab := 
+           Group([ m1,m2 ]),
+          TheRotSubgroup := 
+           Group([ m1,m2 ]),
+          BoundaryImage := rec(
+              ListIFace := [ ],
+              ListSign := [  ],
+              ListElt := [  ] )
+) , 
+ 
+#v2 = B
+rec(
+          TheMatrixStab := 
+           ConjugateGroup(Group([ m5,m6 ]),m3^-1),
+          TheRotSubgroup := 
+           ConjugateGroup(Group([ m5,m6 ]),m3^-1),
+          BoundaryImage := rec(
+              ListIFace := [ ],
+              ListSign := [  ],
+              ListElt := [  ] )
+) , 
+
+
+#v3 = F
+rec(
+          TheMatrixStab := 
+           Group([ m9,m10 ]),
+          TheRotSubgroup := 
+           Group([ m9,m10 ]),
+          BoundaryImage := rec(
+              ListIFace := [ ],
+              ListSign := [  ],
+              ListElt := [  ] )
+) , 
+
+#v4 = A
+rec(
+          TheMatrixStab := 
+           Group([ m3,m4 ]),
+          TheRotSubgroup := 
+           Group([ m3,m4 ]),
+          BoundaryImage := rec(
+              ListIFace := [ ],
+              ListSign := [  ],
+              ListElt := [  ] )
+) , 
+
+#v5 = D
+rec(
+          TheMatrixStab := 
+           Group([ m7,m5 ]),
+          TheRotSubgroup := 
+           Group([ m7,m5 ]),
+          BoundaryImage := rec(
+              ListIFace := [ ],
+              ListSign := [  ],
+              ListElt := [  ] )
+) 
+ 
+],
+
+#1-cells
+[ 
+
+#e1 = OC
+rec(
+          TheMatrixStab := 
+           Group([ m11,m12 ]),
+          TheRotSubgroup := 
+           Group([ m11,m12 ]),
+          BoundaryImage := rec(
+              ListIFace := [2,1 ],
+              ListSign := [1,-1  ],
+              ListElt := [m3^-1,m0 ] )
+),
+
+
+#e2 = OF
+rec(
+          TheMatrixStab := 
+           Group([ m9,m5 ]),
+          TheRotSubgroup := 
+           Group([ m9,m5 ]),
+          BoundaryImage := rec(
+              ListIFace := [3,1 ],
+              ListSign := [1,-1  ],
+              ListElt := [m0,m0  ] )
+),
+
+
+#e3 = OA
+rec(
+          TheMatrixStab := 
+           Group([ m9,m2 ]),
+          TheRotSubgroup := 
+           Group([ m9,m2 ]),
+          BoundaryImage := rec(
+              ListIFace := [4,1 ],
+              ListSign := [1,-1  ],
+              ListElt := [m0,m0 ] )
+),
+
+#e4 = AB 
+rec(
+          TheMatrixStab := 
+           ConjugateGroup(Group([ m2 ]),m3^-1),
+          TheRotSubgroup := 
+           ConjugateGroup(Group([ m2 ]),m3^-1),
+          BoundaryImage := rec(
+              ListIFace := [2,4 ],
+              ListSign := [1,-1  ],
+              ListElt := [m0,m0  ] )
+),
+
+#e5 = AD
+rec(
+          TheMatrixStab := 
+           Group([ m4*m9*m4^-1 ]),
+          TheRotSubgroup := 
+           Group([ m4*m9*m4^-1 ]),
+          BoundaryImage := rec(
+              ListIFace := [5,4 ],
+              ListSign := [1,-1  ],
+              ListElt := [m0,m0  ] )
+),
+
+#e6 = BD
+rec(
+          TheMatrixStab := 
+           ConjugateGroup(Group([ m5,m13 ]),m4*m3),
+          TheRotSubgroup := 
+           ConjugateGroup(Group([ m5,m13 ]),m4*m3),
+          BoundaryImage := rec(
+              ListIFace := [5,2 ],
+              ListSign := [1,-1  ],
+              ListElt := [m0,m0  ] )
+),
+
+#e7 = BF
+rec(
+          TheMatrixStab := 
+           Group([ m8,m5 ]),
+          TheRotSubgroup := 
+           Group([ m8,m5 ]),
+          BoundaryImage := rec(
+              ListIFace := [3,2 ],
+              ListSign := [1,-1  ],
+              ListElt := [m0,m0  ] )
+),
+
+#e8 = EF
+rec(
+          TheMatrixStab := 
+           Group([ m15,m9 ]),
+          TheRotSubgroup := 
+           Group([ m15,m9 ]),
+          BoundaryImage := rec(
+              ListIFace := [3,5 ],
+              ListSign := [1,-1  ],
+              ListElt := [m0,m4  ] )
+)
+],
+
+#2-cells
+[
+
+#t1 = ABD
+rec(
+          TheMatrixStab := 
+           Group([ m0 ]),
+          TheRotSubgroup := 
+           Group([ m0 ]),
+          BoundaryImage := rec(
+              ListIFace := [6,5,4 ],
+              ListSign := [1,-1,1  ],
+              ListElt := [m0,m0,m0 ] )
+),
+
+#t2 = OAC
+rec(
+          TheMatrixStab := 
+           Group([ m2 ]),
+          TheRotSubgroup := 
+           Group([ m2 ]),
+          BoundaryImage := rec(
+              ListIFace := [4,1,3 ],
+              ListSign := [1,-1,1  ],
+              ListElt := [m3^-1,m0,m0  ] )
+),
+
+#t3 = OAEF
+rec(
+          TheMatrixStab := 
+           Group([ m9 ]),
+          TheRotSubgroup := 
+           Group([ m9 ]),
+          BoundaryImage := rec(
+              ListIFace := [3,5,8,2 ],
+              ListSign := [1,1,1,-1  ],
+              ListElt := [m0,m4,m0,m0 ] )
+),
+
+#t4 = OCDBF
+rec(
+          TheMatrixStab := 
+           Group([ m5 ]),
+          TheRotSubgroup := 
+           Group([ m5 ]),
+          BoundaryImage := rec(
+              ListIFace := [1,6,6,7,2],
+              ListSign := [1,1,-1,1,-1 ],
+              ListElt := [m0,m4*m3,m0,m0,m0  ] )
+),
+
+#t5 = BEF
+rec(
+          TheMatrixStab := 
+           Group([ m14,m8 ]),
+          TheRotSubgroup := 
+           Group([ m14,m8 ]),
+          BoundaryImage := rec(
+              ListIFace := [7,8,6 ],
+              ListSign := [1,-1,-1],
+              ListElt := [m0,m0,m4  ] )
+)
+
+],
+
+#3-cells
+[
+#T1
+rec(
+          TheMatrixStab := 
+           Group([ m0 ]),
+          TheRotSubgroup := 
+           Group([ m0 ]),
+          BoundaryImage := rec(
+              ListIFace := [1,1,1,2,3,4,5],
+              ListSign := [1, -1, -1, 1, -1, 1, -1   ],
+              ListElt := [m0,m3^-1*m4, m4,m0,m0,m0 ,m0 ] )
+)
+]
+
+];
