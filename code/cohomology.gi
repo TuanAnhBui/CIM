@@ -184,7 +184,7 @@ exportFile:=Concatenation("./tmp/",name,".sage");
 PrintTo(exportFile,"\" Commands for computing cohomology of degree ",n,"\"\n");
 AppendTo(exportFile,"from time import time, gmtime, strftime \n"); 
 AppendTo(exportFile,"logfile = strftime(\"%d%b%Y%H%M\", gmtime()) \n");
-
+AppendTo(exportFile,"n = ",n,"\n");
 AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/log",String(n),".txt\"),", "\"w+\") as f:\n");
 AppendTo(exportFile,"    f.write('LOGFILE FOR THE COMPUTATION OF D'+str(n)+'");
 AppendTo(exportFile,"""\n""");
@@ -193,7 +193,7 @@ AppendTo(exportFile,"')\n");
 
 AppendTo(exportFile,"total_run_time = time() \n");
 AppendTo(exportFile,"run_time = time() \n");
-AppendTo(exportFile,"n = ",n,"\n");
+
 AppendTo(exportFile,"load(\"./tmp/C",n,"_C",n+1,".sage\")\n");
 AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/log",String(n),".txt\"),", "\"a+\") as f:\n");
 AppendTo(exportFile,"    f.write('Finished loading the boundary map C'+str(n)+'_C'+str(n+1)+'");
@@ -305,12 +305,12 @@ exportFile:=Concatenation("./tmp/",name,".sage");
 PrintTo(exportFile,"\" Commands for computing cohomology of degree ",n,"\"\n");
 AppendTo(exportFile,"from time import time, gmtime, strftime \n"); 
 AppendTo(exportFile,"logfile = strftime(\"%d%b%Y%H%M\", gmtime()) \n");
-
+AppendTo(exportFile,"n = ",n,"\n");
 AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/log",String(n),".txt\"),", "\"w+\") as f:\n");
 AppendTo(exportFile,"    f.write('LOGFILE FOR THE COMPUTATION OF D'+str(n)+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
-AppendTo(exportFile,"n = ",n,"\n");
+
 AppendTo(exportFile,"total_run_time = time() \n");
 AppendTo(exportFile,"run_time = time() \n");
 AppendTo(exportFile,"load(\"./tmp/C",n-1,"_C",n,".sage\")\n");
