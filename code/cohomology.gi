@@ -191,7 +191,7 @@ AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/logfile.txt\"),", "\"
 AppendTo(exportFile,"    f.write('Finished loading the boundary map C'+String(n)+'_C'+String(n+1)+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
-AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!+'");
+AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!'+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
 
@@ -201,7 +201,7 @@ AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/logfile.txt\"),", "\"
 AppendTo(exportFile,"    f.write('Finished loading the boundary map D'+String(n)+'_D'+String(n+1)+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
-AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!+'");
+AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!'+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
 
@@ -210,7 +210,7 @@ AppendTo(exportFile,"load(\"./tmp/f",n,".sage\")\n");
 AppendTo(exportFile,"    f.write('Finished loading the chain map f'+String(n)+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
-AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!+'");
+AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!'+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
 
@@ -219,7 +219,7 @@ AppendTo(exportFile,"V2 = N",n,".left_kernel()\n");
 AppendTo(exportFile,"B = V2.basis()\n");
 AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/logfile.txt\"),", "\"w\") as f:\n");
 AppendTo(exportFile,"    f.write('Computation of the kernel of N has been done! ')\n");
-AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!+'");
+AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!'+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
 
@@ -227,7 +227,7 @@ AppendTo(exportFile,"run_time = time() \n");
 AppendTo(exportFile,"L = [x*f",n," for x in B]\n");
 AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/logfile.txt\"),", "\"w\") as f:\n");
 AppendTo(exportFile,"    f.write('Mapping the basis of the kernel of N has been done!')\n");
-AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!+'");
+AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!'+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
 
@@ -235,7 +235,7 @@ AppendTo(exportFile,"run_time = time() \n");
 AppendTo(exportFile,"V1 = M",n,".left_kernel()\n");
 AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/logfile.txt\"),", "\"w\") as f:\n");
 AppendTo(exportFile,"    f.write('Computation of the kernel of M has been done!')\n");
-AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!+'");
+AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!'+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
 
@@ -243,7 +243,7 @@ AppendTo(exportFile,"run_time = time() \n");
 AppendTo(exportFile,"LL = [list(V1.coordinate_vector(x)) for x in L]\n");
 AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/logfile.txt\"),", "\"w\") as f:\n");
 AppendTo(exportFile,"    f.write('Computing the coordinates of the images of f has been done!')\n");
-AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!+'");
+AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!'+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
 
@@ -252,7 +252,7 @@ AppendTo(exportFile,"    f.write('return '+str(LL)+';')\n");
 
 AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/logfile.txt\"),", "\"w\") as f:\n");
 AppendTo(exportFile,"    f.write('Computation the matrix d'+String(n)+' has been done!')\n");
-AppendTo(exportFile,"    f.write('Totally, it took '+String(time()-total_run_time)+' seconds!+'");
+AppendTo(exportFile,"    f.write('Totally, it took '+String(time()-total_run_time)+' seconds!'+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
 
@@ -309,7 +309,7 @@ AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/logfile.txt\"),", "\"
 AppendTo(exportFile,"    f.write('Finished loading the boundary map C'+String(n-1)+'_C'+String(n)+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
-AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!+'");
+AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!'+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
 
@@ -320,7 +320,7 @@ AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/logfile.txt\"),", "\"
 AppendTo(exportFile,"    f.write('Finished loading the boundary map C'+String(n)+'_C'+String(n+1)+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
-AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!+'");
+AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!'+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
 
@@ -331,7 +331,7 @@ AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/logfile.txt\"),", "\"
 AppendTo(exportFile,"    f.write('Finished loading the boundary map D'+String(n-1)+'_D'+String(n)+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
-AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!+'");
+AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!'+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
 
@@ -342,7 +342,7 @@ AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/logfile.txt\"),", "\"
 AppendTo(exportFile,"    f.write('Finished loading the boundary map D'+String(n)+'_D'+String(n+1)+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
-AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!+'");
+AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!'+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
 
@@ -352,7 +352,7 @@ AppendTo(exportFile,"load(\"./tmp/f",n,".sage\")\n");
 AppendTo(exportFile,"    f.write('Finished loading the chain map f'+String(n)+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
-AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!+'");
+AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!'+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
 
@@ -362,7 +362,7 @@ AppendTo(exportFile,"V2 = N",n,".left_kernel()\n");
 AppendTo(exportFile,"B = V2.basis()\n");
 AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/logfile.txt\"),", "\"w\") as f:\n");
 AppendTo(exportFile,"    f.write('Computation of the kernel of N'+String(n)+' has been done! ')\n");
-AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!+'");
+AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!'+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
 
@@ -372,7 +372,7 @@ AppendTo(exportFile,"W2 = N",n-1,".image()\n");
 AppendTo(exportFile,"B = Q2.basis()\n");
 AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/logfile.txt\"),", "\"w\") as f:\n");
 AppendTo(exportFile,"    f.write('Computation of the image of N'+String(n-1)+' has been done! ')\n");
-AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!+'");
+AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!'+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
 
@@ -381,7 +381,7 @@ AppendTo(exportFile,"run_time = time() \n");
 AppendTo(exportFile,"Q2 = V2/W2\n");
 AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/logfile.txt\"),", "\"w\") as f:\n");
 AppendTo(exportFile,"    f.write('Computation of the quotient has been done! ')\n");
-AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!+'");
+AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!'+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
 
@@ -395,7 +395,7 @@ AppendTo(exportFile,"L = [Q2.lift(x)*f",n," for x in B]\n");
 AppendTo(exportFile,"del Q2\n");
 AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/logfile.txt\"),", "\"w\") as f:\n");
 AppendTo(exportFile,"    f.write('Mapping the basis of the kernel of N has been done!')\n");
-AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!+'");
+AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!'+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
 
@@ -404,7 +404,7 @@ AppendTo(exportFile,"run_time = time() \n");
 AppendTo(exportFile,"V1 = M",n,".left_kernel()\n");
 AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/logfile.txt\"),", "\"w\") as f:\n");
 AppendTo(exportFile,"    f.write('Computation of the kernel of M'+String(n)+' has been done! ')\n");
-AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!+'");
+AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!'+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
 
@@ -412,7 +412,7 @@ AppendTo(exportFile,"run_time = time() \n");
 AppendTo(exportFile,"W1 = M",n-1,".image()\n");
 AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/logfile.txt\"),", "\"w\") as f:\n");
 AppendTo(exportFile,"    f.write('Computation of the image of N'+String(n-1)+' has been done! ')\n");
-AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!+'");
+AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!'+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
 
@@ -420,7 +420,7 @@ AppendTo(exportFile,"run_time = time() \n");
 AppendTo(exportFile,"Q1 = V1/W1\n");
 AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/logfile.txt\"),", "\"w\") as f:\n");
 AppendTo(exportFile,"    f.write('Computation of the quotient has been done! ')\n");
-AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!+'");
+AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!'+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
 
@@ -435,7 +435,7 @@ AppendTo(exportFile,"LL = [list(Q1.coordinate_vector(map(x))) for x in L]\n");
 AppendTo(exportFile,"del Q1\n");
 AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/logfile.txt\"),", "\"w\") as f:\n");
 AppendTo(exportFile,"    f.write('Computing the coordinates of the images of f has been done!')\n");
-AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!+'");
+AppendTo(exportFile,"    f.write('It took '+String(time()-run_time)+' seconds!'+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
 
@@ -445,7 +445,7 @@ AppendTo(exportFile,"    f.write('return '+str(LL)+';')");
 
 AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/logfile.txt\"),", "\"w\") as f:\n");
 AppendTo(exportFile,"    f.write('Computation the matrix d'+String(n)+' has been done!')\n");
-AppendTo(exportFile,"    f.write('Totally, it took '+String(time()-total_run_time)+' seconds!+'");
+AppendTo(exportFile,"    f.write('Totally, it took '+String(time()-total_run_time)+' seconds!'+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
 
