@@ -207,6 +207,7 @@ AppendTo(exportFile,"')\n");
 
 AppendTo(exportFile,"run_time = time() \n");
 AppendTo(exportFile,"load(\"./tmp/f",n,".sage\")\n");
+AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/logfile.txt\"),", "\"w\") as f:\n");
 AppendTo(exportFile,"    f.write('Finished loading the chain map f'+String(n)+'");
 AppendTo(exportFile,"""\n""");
 AppendTo(exportFile,"')\n");
