@@ -451,7 +451,7 @@ AppendTo(exportFile,"')\n");
 
 
 AppendTo(exportFile,"with open(os.path.expanduser(\"./results/d",String(n),".g\"),", "\"w\") as f:");
-AppendTo(exportFile,"    f.write('return '+str(LL)+';')");
+AppendTo(exportFile,"    f.write('return '+str(LL)+';') \n");
 
 AppendTo(exportFile,"with open(os.path.expanduser(\"./logs/logfile.txt\"),", "\"w\") as f:\n");
 AppendTo(exportFile,"    f.write('Computation the matrix d'+str(n)+' has been done!')\n");
