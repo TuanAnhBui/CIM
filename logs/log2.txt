@@ -1,0 +1,20 @@
+LOGFILE FOR THE COMPUTATION OF D2
+Finished loading the boundary map C1_C2
+It took 12.8608839512 seconds!
+Finished loading the boundary map C2_C3
+It took 39.2090671062 seconds!
+Finished loading the boundary map D1_D2
+It took 3.95950198174 seconds!
+Finished loading the boundary map D2_D3
+It took 12.3528220654 seconds!
+Finished loading the chain map f2
+It took 7.04952383041 seconds!
+Computation of the kernel of N2 has been done! It took 381.723159075 seconds!
+Computation of the image of N1 has been done! It took 53.3300979137 seconds!
+Computation of the quotient has been done! It took 154.475883007 seconds!
+Mapping the basis of the kernel of N has been done!It took 0.000180006027222 seconds!
+Computation of the kernel of M2 has been done! It took 3503.90604806 seconds!
+Computation of the image of N1 has been done! It took 461.963784933 seconds!
+Computation of the quotient has been done! It took 1347.85139179 seconds!
+Computing the coordinates of the images of f has been done!It took 0.000216960906982 seconds!
+Computation the matrix d2 has been done!Totally, it took 5978.69820595 seconds!

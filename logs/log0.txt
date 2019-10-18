@@ -1,0 +1,12 @@
+LOGFILE FOR THE COMPUTATION OF D0
+Finished loading the boundary map C0_C1
+It took 2.26715421677 seconds!
+Finished loading the boundary map D0_D1
+It took 0.394199848175 seconds!
+Finished loading the chain map f0
+It took 0.0145449638367 seconds!
+Computation of the kernel of N has been done! It took 0.735711812973 seconds!
+Mapping the basis of the kernel of N has been done!It took 0.0320138931274 seconds!
+Computation of the kernel of M has been done!It took 0.106062889099 seconds!
+Computing the coordinates of the images of f has been done!It took 0.00768709182739 seconds!
+Computation the matrix d0 has been done!Totally, it took 3.57012605667 seconds!

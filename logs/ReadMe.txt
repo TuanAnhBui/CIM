@@ -1,1 +1,0 @@
-The name of the logfile is structured using the local time it created!

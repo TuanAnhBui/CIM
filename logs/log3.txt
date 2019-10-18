@@ -1,0 +1,15 @@
+LOGFILE FOR THE COMPUTATION OF D3
+Finished loading the boundary map C2_C3
+It took 37.4477028847 seconds!
+Finished loading the boundary map C3_C4
+It took 47.4808759689 seconds!
+Finished loading the boundary map D2_D3
+It took 11.8996620178 seconds!
+Finished loading the boundary map D3_D4
+It took 15.5142080784 seconds!
+Finished loading the chain map f3
+It took 16.8231790066 seconds!
+Computation of the kernel of N3 has been done! It took 5815.06818986 seconds!
+Computation of the image of N2 has been done! It took 1044.40749717 seconds!
+Computation of the quotient has been done! It took 2966.24616694 seconds!
+Mapping the basis of the kernel of N has been done!It took 5899.97088408 seconds!
